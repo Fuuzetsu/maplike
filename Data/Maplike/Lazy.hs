@@ -12,11 +12,11 @@ import Prelude hiding(null)
 -- * Query
 
 size :: (Maplike k m) => m v -> Int
-size = length
+size = C.size
 {-# INLINE size #-}
 
 null :: (Maplike k m) => m v -> Bool
-null = Fold.null
+null = C.null
 {-# INLINE null #-}
 
 member :: (Maplike k m) => k -> m v -> Bool
